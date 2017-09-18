@@ -27,7 +27,7 @@ car was still at difficulty to keep centered in the lane, so the speed waslowere
 bridge was much easier to navigate than the following right turn around the lake because the I term was compensating for
 average left-hand turn due to the counter-clockwise lap.
 
-4. Manual tuning was done, running the simulator each time and comparing my results.
+4. Manual tuning was done, running the simulator each time and comparing the results.
 
 5.  P coefficient was increased, it was noticed that it needs a much larger corresponding increase in the D coeffecient,
 otherwise the car would oscillate around the center of the track but never drive straight.
