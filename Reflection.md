@@ -34,3 +34,6 @@ otherwise the car would oscillate around the center of the track but never drive
 
 6. Finally this settled  on Kp = 0.18, Ki = 0.0000001, Kd = 0.2 as the hyperparemeters form the PID controller.  It was found that the
 larger D value gave smoother driving and keeping the I term low reduced the left-hand bias.
+
+##### Sample run video: 
+Video is available at: https://youtu.be/UVsrAqzb13o
