@@ -1,5 +1,7 @@
 ### Hyperparameter tuning.
 
+##### Introduction: Cause and effect analysis
+
 The P, or "proportional", component had the most directly observable effect on the car's behavior.
 It causes the car to steer proportional (and opposite) to the car's distance from the lane center 
 (which is the CTE) - if the car is far to the right it steers hard to the left, if it's slightly 
@@ -13,7 +15,7 @@ The I, or "integral", component counteracts a bias in the CTE which prevents the
 reaching the center line. This bias can take several forms, such as a steering drift (as in the Control unit lessons), 
 but I believe that in this particular implementation the I component particularly serves to reduce the CTE around curves.
 
-
+##### Tuning steps
 
 1. Initially,  P, I, and D coefficients from the lessons (i.e. Kp = 0.2, Ki = 0.004, Kd = 3.0) was selected, but this
 caused the car to turn very sharply, oscillating back and forth and then promptly run off the track.
