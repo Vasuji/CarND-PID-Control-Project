@@ -15,20 +15,20 @@ but I believe that in this particular implementation the I component particularl
 
 
 
-1. Initially, I started with P, I, and D coefficients from the lessons (i.e. Kp = 0.2, Ki = 0.004, Kd = 3.0), but this
-caused my car to turn very sharply, oscillating back and forth and then promptly run off the track.
+1. Initially,  P, I, and D coefficients from the lessons (i.e. Kp = 0.2, Ki = 0.004, Kd = 3.0) was selected, but this
+caused the car to turn very sharply, oscillating back and forth and then promptly run off the track.
 
-2. I lowered all of the values until I had steering angles within the model tolerance of [-1, 1].  I still found that my
-car was difficult to keep centered in the lane, so I also lowered the speed from 0.3 to 0.1
+2. All of the values were lowered until the steering angles remain within the model tolerance of [-1, 1].  After that
+car was still at difficulty to keep centered in the lane, so the speed waslowered from 0.3 to 0.1.
 
-3. I found I was able to stay on the track with Kp = 0.10, Ki = 0.0000000006, Kd = 0.0019.  I found that the left turn after
+3. It was found it iseasy to stay on the track with Kp = 0.10, Ki = 0.0000000006, Kd = 0.0019. Also the left turn after
 bridge was much easier to navigate than the following right turn around the lake because the I term was compensating for
 average left-hand turn due to the counter-clockwise lap.
 
-4. I used manual tuning, running the simulator each time and comparing my results.
+4. Manual tuning was done, running the simulator each time and comparing my results.
 
-5. As I increased the P coefficient, I noticed that I needed a much larger corresponding increase in the D coeffecient,
+5.  P coefficient was increased, it was noticed that it needs a much larger corresponding increase in the D coeffecient,
 otherwise the car would oscillate around the center of the track but never drive straight.
 
-6. I finally settled on Kp = 0.18, Ki = 0.0000001, Kd = 0.2 as the hyperparemeters form my PID controller.  I found the
+6. Finally this settled  on Kp = 0.18, Ki = 0.0000001, Kd = 0.2 as the hyperparemeters form the PID controller.  It was found that the
 larger D value gave smoother driving and keeping the I term low reduced the left-hand bias.
